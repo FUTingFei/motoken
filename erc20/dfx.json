@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "motoko_token": {
-      "main": "src/motoko_token/main.mo",
+    "motoken": {
+      "main": "src/motoken/main.mo",
       "type": "motoko"
     },
-    "motoko_token_assets": {
+    "motoken_assets": {
       "dependencies": [
-        "motoko_token"
+        "motoken"
       ],
       "frontend": {
-        "entrypoint": "src/motoko_token_assets/public/index.js"
+        "entrypoint": "src/motoken_assets/public/index.js"
       },
       "source": [
-        "src/motoko_token_assets/assets",
-        "dist/motoko_token_assets/"
+        "src/motoken_assets/assets",
+        "dist/motoken_assets/"
       ],
       "type": "assets"
     }
