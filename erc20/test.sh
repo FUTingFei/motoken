@@ -33,7 +33,9 @@ echo
 eval dfx canister call motoken init "'(\"motoken\", \"MTK\", 0, 10000)'"
 
 # 转账
+echo 
 echo == transfer ==
+echo
 
 echo Total Supply = $( eval dfx canister call motoken totalSupply )
 echo Default = $( eval dfx canister call motoken balanceOf "'($ALICE_ID)'" )
@@ -95,16 +97,3 @@ echo Bob = $( eval dfx canister call motoken balanceOf "'($BOB_ID)'" )
 echo 
 echo == test over ==
 echo 
-
-
-
-
-
-
-
-
-
-
-
-
-
